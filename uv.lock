@@ -375,6 +375,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "docling" },
     { name = "groq" },
+    { name = "hdbscan" },
     { name = "langextract" },
     { name = "nltk" },
     { name = "numpy" },
@@ -398,6 +399,7 @@ dev = [
 requires-dist = [
     { name = "docling", specifier = ">=2.76.0" },
     { name = "groq", specifier = ">=1.0.0" },
+    { name = "hdbscan", specifier = ">=0.8.41" },
     { name = "langextract", specifier = ">=1.1.1" },
     { name = "nltk", specifier = ">=3.9.2" },
     { name = "numpy", specifier = ">=2.4.2" },
@@ -898,6 +900,18 @@ sdist = { url = "https://files.pythonhosted.org/packages/1d/17/afa56379f94ad0fe8
 wheels = [
     { url = "https://files.pythonhosted.org/packages/69/b2/119f6e6dcbd96f9069ce9a2665e0146588dc9f88f29549711853645e736a/h2-4.3.0-py3-none-any.whl", hash = "sha256:c438f029a25f7945c69e0ccf0fb951dc3f73a5f6412981daee861431b70e2bdd", size = 61779, upload-time = "2025-08-23T18:12:17.779Z" },
 ]
+
+[[package]]
+name = "hdbscan"
+version = "0.8.41"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "joblib" },
+    { name = "numpy" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0c/22/32a66dd4ce72145ec1b792c794b98897be467bdf18c10aa8b48275530b11/hdbscan-0.8.41.tar.gz", hash = "sha256:e41e823e5bb21ff2173f252d226266b1dda82bdbba5d89106eafb251429dff3d", size = 7091384, upload-time = "2025-12-12T15:48:30.807Z" }
 
 [[package]]
 name = "hf-xet"
